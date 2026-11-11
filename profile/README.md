@@ -40,7 +40,7 @@ Coverage spans **50+ pharmacogenes** and **~950 medications** with clinical PGx 
 
 - **Launch in days, not quarters** — no software to build, no bioinformatics team to hire.
 - **Your brand, end to end** — reports go out under your laboratory's name, not ours.
-- **Physician-reviewed by design** — every recommendation is drafted with citations, then reviewed and owned by a licensed clinician before release.
+- **Physician-reviewed by design** — every recommendation is drafted with citations, then reviewed and owned by a licensed clinician before release, with an optional clinical pharmacist (PharmD) or Medical Director overread step.
 - **Reimbursement built in** — CPT + ICD-10 coding, MolDX Z-code context, and audit-ready medical-necessity documentation on every report.
 - **EHR-native delivery** — results reach clinicians through HL7 FHIR R4, SMART on FHIR, and CDS Hooks.
 - **Current by design** — coverage is continuously re-evaluated as guidelines and allele definitions change.
@@ -55,14 +55,14 @@ Coverage spans **50+ pharmacogenes** and **~950 medications** with clinical PGx 
 | --- | --- |
 | **A CLIA laboratory director** | Add a PGx reporting line under your own brand without an internal software or bioinformatics build. |
 | **A lab operations / commercial lead** | Turn genotype panels into billable, reimbursement-ready, audit-defensible reports. |
-| **A clinical / medical director** | Keep human-in-the-loop governance: source-cited drafts, licensed-clinician sign-off, prescribing left with the treating physician. |
+| **A clinical / medical director** | Keep human-in-the-loop governance: source-cited drafts, an optional pharmacist (PharmD) or medical-director overread, licensed-clinician sign-off, prescribing left with the treating physician. |
 | **An EHR / integration owner** | Deliver results into clinical workflows via standards — FHIR R4, SMART on FHIR, and CDS Hooks. |
 
 ---
 
 ## Platform capabilities
 
-The SignalPGx platform spans seven capability modules, each with a dedicated page — listed below alongside the platform overview.
+The SignalPGx platform spans the capability modules below; most have a dedicated page on signalpgx.com.
 
 | Module | What it does |
 | --- | --- |
@@ -74,8 +74,11 @@ The SignalPGx platform spans seven capability modules, each with a dedicated pag
 | [**PGx Revenue Defense Engine**](https://signalpgx.com/revenue-defense) | CPT / ICD-10 coding, MolDX Z-code context, and medical-necessity documentation. |
 | [**EHR + CDS Integrations**](https://signalpgx.com/integrations) | HL7 FHIR R4, SMART on FHIR, and CDS Hooks delivery into the EHR. |
 | [**White-Label Reports**](https://signalpgx.com/white-label-reports) | Physician-reviewed reports delivered under the laboratory's own brand. |
+| **PharmD / Medical Director overread** | An optional, recorded clinical pharmacist (PharmD) or Medical Director review of each interpretation before the laboratory director signs, tied to the exact results and medications reviewed. |
+| **Ordering-provider directory** | NPI-verified ordering providers linked to each patient and carried into reports, claims, and EHR messages. |
+| **Report re-interpretation** | Re-read a prior PGx report from another laboratory and re-issue it as a current, source-cited report, with the original laboratory's provenance shown. |
 
-**Genotype inputs supported:** VCF · Agena MassARRAY · CSV · custom lab formats.
+**Genotype inputs supported:** VCF · Agena MassARRAY (CSV or Excel export) · CSV · prior PGx reports (PDF) · custom lab formats.
 
 ---
 
@@ -133,9 +136,9 @@ More detail: **[Security & Compliance →](https://signalpgx.com/security)**
 
 ## 🛠️ What's in this GitHub organization
 
-This organization is **new**, and it's where SignalPGx publishes its **public, standards-based developer resources** for teams integrating pharmacogenomic reporting into clinical systems.
+This organization is where SignalPGx will publish **public, standards-based developer resources** for teams integrating pharmacogenomic reporting into clinical systems.
 
-This is where we publish:
+Planned resources:
 
 - **HL7 FHIR R4 sample bundles** illustrating how PGx observations and reports are structured for exchange (LOINC / HGNC / RxNorm coded).
 - **CPIC-conformant mapping examples** and standards-based reference material for gene–drug interpretation.
